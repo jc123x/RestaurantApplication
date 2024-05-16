@@ -1,0 +1,17 @@
+.content{
+    margin: 100px;
+    min-height: 65vh;
+}
+
+.card{
+    width: 400px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+.card-title{
+    color: cornflowerblue;
+    font-size: 25px;
+}
+
+#title
