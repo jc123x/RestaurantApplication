@@ -10,10 +10,8 @@ import java.util.List;
 public class DishService {
 
     //add a  method to get all dishes
-
+//getAllDishes retrieves list of dishes from dishRepository and returns it
     public List<Dish> getAllDishes(){
         return DishRepository.getDishes();
     }
-
-
 }

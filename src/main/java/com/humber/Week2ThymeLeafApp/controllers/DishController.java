@@ -13,29 +13,28 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @Controller
-@RequestMapping("/restaurant")
+@RequestMapping("/restaurant")  //base url
 
 public class DishController {
 
     //field injection - injecting service into controller
 
-
-    @Autowired
+    @Autowired  //spring will automatically inject an instance of dishservice in this field
     private DishService dishService;
 
     //@Value("${restaurant.name}")
-    @Value("Shawarma Palace")
+    @Value("Dine Divine")
     private String name;
 
     //home page
-    @GetMapping("/home")
+    @GetMapping("/home") //handles get requests
     public String home(Model model){
         model.addAttribute("restaurantName", name);
         return "home";
-       // return name;
-
+        
     }
 
+    //getAllDishes takes model object as parameter, adds attribute dishes with value obtained from dishservice.getAllDihes, returns menu template
     @GetMapping("/dishes")
    // public List<Dish> getAllDishes(){
     public String getAllDishes(Model model){
@@ -43,6 +42,4 @@ public class DishController {
         //return dishService.getAllDishes();
         return "menu";
     }
-
-
 }

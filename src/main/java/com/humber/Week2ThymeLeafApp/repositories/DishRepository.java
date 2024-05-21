@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 
+//imports the dish model
+//provides access to dish data
 @Repository
 public class DishRepository {
     private static List<Dish> dishes = new ArrayList<Dish>();
@@ -16,15 +18,25 @@ public class DishRepository {
 
         //this builder package is used since it displays the name of the fields
         dishes.add(
-                Dish.builder().id(1).name("burger").category("american").price(9.0)
+                Dish.builder().id(1).name("Lobster Ravioli").category("Italian").price(9.0)
                         .build()
         );
         dishes.add(
-                Dish.builder().id(2).name("ramen").category("japanese").price(4.0)
+                Dish.builder().id(2).name("Paella").category("Spanish").price(4.0)
                         .build()
         );
         dishes.add(
-                Dish.builder().id(3).name("pasta").category("italian").price(3.0)
+                Dish.builder().id(3).name("Moussaka").category("Greek").price(3.0)
+                        .build()
+        );
+
+        dishes.add(
+                Dish.builder().id(4).name("Ramen").category("Japanese").price(3.0)
+                        .build()
+        );
+
+        dishes.add(
+                Dish.builder().id(5).name("Pad Thai").category("Thai").price(30.0)
                         .build()
         );
     }

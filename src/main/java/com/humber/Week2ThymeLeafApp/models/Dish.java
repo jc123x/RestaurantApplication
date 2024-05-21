@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Data //used for fields and can also use @getterandsetter
 @AllArgsConstructor
 @NoArgsConstructor
-@Builder //
+@Builder 
 
 //this dish model maps the table in the database
 public class Dish {

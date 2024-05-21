@@ -1,17 +1,56 @@
-.content{
+.main {
+    background-image: linear-gradient(to left, palegoldenrod, black);
+    min-height: 100vh;
+}
+
+.content {
     margin: 100px;
     min-height: 65vh;
 }
 
-.card{
-    width: 400px;
+.card {
+    width: 500px;
     text-align: center;
     margin: 100px auto;
+    color: white;
+    border: none;
 }
 
-.card-title{
-    color: cornflowerblue;
+.card-body {
+    background-color: black;
+}
+
+.card-title {
     font-size: 25px;
 }
 
-#title
+#title {
+    color: goldenrod;
+    font-family: Elephant, fangsong;
+    font-size: 100px;
+}
+
+.navbar .nav-link {
+color: silver;
+margin-right: 30px;
+}
+
+.navbar .nav-link:hover {
+    color: firebrick;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: gray;
+    color: white;
+}
+
+.table {
+    border: 1px solid black;
+}
+
+.table thead th {
+    background-color: maroon;
+    color: white;
+}
