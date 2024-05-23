@@ -3,7 +3,17 @@
     min-height: 100vh;
 }
 
+.main2 {
+    background: linear-gradient(0.25turn, black, darkred, black);
+    min-height: 100vh;
+}
+
 .content {
+    margin: 100px;
+    min-height: 65vh;
+}
+
+.content2 {
     margin: 100px;
     min-height: 65vh;
 }
@@ -16,8 +26,22 @@
     border: none;
 }
 
+.card2 {
+    width: 500px;
+    text-align: center;
+    margin: 100px auto;
+    color: white;
+}
+
 .card-body {
     background-color: black;
+}
+
+.card-body2 {
+    background-color: black;
+    line-height: 1.8;
+    padding: 7px;
+    border: 1px solid palegoldenrod;
 }
 
 .card-title {
@@ -28,6 +52,15 @@
     color: goldenrod;
     font-family: Elephant, fangsong;
     font-size: 100px;
+}
+
+#addDish {
+    color: goldenrod;
+    font-family: Elephant, fangsong;
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar .nav-link {
@@ -53,4 +86,15 @@ footer {
 .table thead th {
     background-color: maroon;
     color: white;
+}
+
+div label {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+    margin-right: 10px;
+}
+
+div input {
+    margin-bottom: 20px;
 }

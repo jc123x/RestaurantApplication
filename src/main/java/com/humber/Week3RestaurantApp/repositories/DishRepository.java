@@ -1,8 +1,7 @@
-package com.humber.Week2ThymeLeafApp.repositories;
+package com.humber.Week3RestaurantApp.repositories;
 
-import com.humber.Week2ThymeLeafApp.models.Dish;
+import com.humber.Week3RestaurantApp.models.Dish;
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;

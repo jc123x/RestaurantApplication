@@ -1,4 +1,4 @@
-package com.humber.Week2ThymeLeafApp.models;
+package com.humber.Week3RestaurantApp.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
