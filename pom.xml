@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.humber</groupId>
-	<artifactId>Week3RestaurantApp</artifactId>
+	<artifactId>Week5RestaurantApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Week3RestaurantApp</name>
+	<name>Week5RestaurantApp</name>
 	<description>Fullstack for my restaurant app</description>
 	<properties>
 		<java.version>17</java.version>
@@ -41,6 +41,15 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>runtime</scope>
 		</dependency>
 	</dependencies>
 

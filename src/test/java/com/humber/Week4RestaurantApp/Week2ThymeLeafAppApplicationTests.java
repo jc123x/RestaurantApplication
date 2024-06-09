@@ -1,4 +1,4 @@
-package com.humber.Week3RestaurantApp;
+package com.humber.Week4RestaurantApp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
