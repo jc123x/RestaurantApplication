@@ -1,11 +1,16 @@
 .main {
-    background-image: linear-gradient(to left, palegoldenrod, black);
+    background-image: linear-gradient(0.25turn, black, black, palegoldenrod);
     min-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
 }
 
 .main2 {
-    background: linear-gradient(0.25turn, black, darkred, black);
+    /*background: linear-gradient(0.25turn, black, indianred, black);*/
+    background-image: linear-gradient( black, black, indianred, black, black);
     min-height: 100vh;
+    overflow-y: scroll;
+    position: relative;
 }
 
 .content {
@@ -40,7 +45,7 @@
 .card-body2 {
     background-color: black;
     line-height: 1.8;
-    padding: 7px;
+    padding: 17px;
     border: 1px solid palegoldenrod;
 }
 
@@ -65,11 +70,11 @@
 
 .navbar .nav-link {
 color: silver;
-margin-right: 30px;
+margin-right: 60px;
 }
 
 .navbar .nav-link:hover {
-    color: firebrick;
+    color: darkred;
 }
 
 footer {
@@ -89,10 +94,11 @@ footer {
 }
 
 div label {
-    display: inline-block;
-    text-align: right;
-    width: 60px;
-    margin-right: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    max-width: 1500px;
+    margin-bottom: 5px;
 }
 
 div input {

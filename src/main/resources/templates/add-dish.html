@@ -14,22 +14,24 @@
     <div class="content2">
         <div class="card2">
             <div class="card-body2" style="color: white;">
-                <h1> <span id="addDish">Add Dish</span></h1>
+
 
         <!--display an error  -->
         <div th:if="${error}" class="alert alert-danger" th:text="${error}"></div>
                 <!--th:object attribute binds the form fields to model object dish  -->
-        <form method="POST" th:action="@{/restaurant/add-dish}" th:object="${dish}">
-            <!--<form method="POST" th:action="@{add-dish}" th:object="${dish}"> -->
+                <form method="POST" th:action="${dish.name} == null? @{/restaurant/add-dish} : @{/restaurant/update-dish}" th:object="${dish}">
+                    <h1>
+                        <span id="addDish" th:text="${dish.name == null ? 'Add a Dish' : 'Update Dish'}"></span>
+                    </h1>
+                    <!--            thymeleaf form binding-->
+                    <!--            <div> <label>ID</label><input type="text" th:field="*{id}"></div>-->
+                    <input type="hidden" th:field="*{id}">
+                    <div> <label>Name</label><input type="text" th:field="*{name}"></div>
+                    <div> <label>Category</label><input type="text" th:field="*{category}"></div>
+                    <div> <label>Price</label><input type="number" th:field="*{price}"></div>
+                    <button type="submit" class="btn btn-primary" th:text="${dish.name == null?'Add' : 'Update'}"></button>
+                </form>
 
-            <!--thymeleaf form binding,  -->
-            <!--th: field attribute binds the input field to the id property of dish object  -->
-
-            <div> <label>Name</label><input type="text" th:field="*{name}"></div>
-            <div> <label>Category</label><input type="text" th:field="*{category}"></div>
-            <div> <label>Price</label><input type="number" th:field="*{price}"></div>
-            <button type="submit" class="btn btn-primary">Add</button>
-        </form>
 
             </div>
         </div>

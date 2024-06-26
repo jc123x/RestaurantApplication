@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.humber</groupId>
-	<artifactId>Week5RestaurantApp</artifactId>
+	<artifactId>Week6RestaurantApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Week5RestaurantApp</name>
+	<name>Week6RestaurantApp</name>
 	<description>Fullstack for my restaurant app</description>
 	<properties>
 		<java.version>17</java.version>
@@ -26,6 +26,7 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -37,21 +38,38 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-jdbc</artifactId>
-		</dependency>
+		<!--       h2 in memory database dependency-->
 		<dependency>
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+		<!--       jdbc template dependency-->
+		<!--       <dependency>-->
+		<!--          <groupId>org.springframework.boot</groupId>-->
+		<!--          <artifactId>spring-boot-starter-jdbc</artifactId>-->
+		<!--       </dependency>-->
+		<!--       <dependency>-->
+		<!--          <groupId>org.springframework.boot</groupId>-->
+		<!--          <artifactId>spring-boot-starter-data-jdbc</artifactId>-->
+		<!--       </dependency>-->
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+
+
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
+
 
 	<build>
 		<plugins>
@@ -69,5 +87,6 @@
 			</plugin>
 		</plugins>
 	</build>
+
 
 </project>
